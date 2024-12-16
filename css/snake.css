@@ -1,0 +1,45 @@
+/* Fondo */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-image: url("../imagen/fondo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh; /* Aseguramos que el fondo cubra toda la pantalla */
+  }
+  
+  /* Botones estilizados */
+  button {
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 8px;
+  }
+  
+  button:focus {
+	outline: none;
+	box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  }
+  
+  /* Área de juego */
+  #game {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: relative;
+	overflow: hidden;
+  }
+  
+  /* Estilo de la serpiente */
+  .snake-segment {
+	background-color: #28a745; /* Verde brillante */
+	position: absolute;
+	border: 1px solid #000;
+  }
+  
+  /* Estilo de la manzana */
+  .apple {
+	background-color: red;
+	position: absolute;
+	border-radius: 50%;
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de la Serpiente</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="css/snake.css">
+</head>
+<body>
+
+  <!-- Contenedor principal -->
+  <div class="d-flex" style="height: 100vh;">
+    <!-- Barra lateral izquierda -->
+    <div class="d-flex flex-column justify-content-center align-items-center bg-dark p-3" style="width: 250px;">
+      <h4 class="text-light mb-3">Menú</h4>
+      <button id="nivel1" class="btn btn-primary mb-2 w-100">Nivel 1</button>
+      <button id="nivel2" class="btn btn-secondary mb-2 w-100">Nivel 2</button>
+      <button id="salir" class="btn btn-danger w-100">Salir</button>
+      <button id="iniciar" class="btn btn-success w-100 mt-3 d-none">Iniciar</button>
+    </div>
+
+    <!-- Área de juego -->
+    <div class="container text-center d-flex justify-content-center align-items-center flex-column w-100">
+      <h1 class="text-light mb-3">Juego de la Serpiente</h1>
+      <h3 class="text-light">Puntos: <span id="puntos">0</span></h3>
+      <div id="game" class="border border-light" style="width: 400px; height: 400px;"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="jquery/jquery-1.9.1.js"></script>
+  <script src="js/apple.js"></script>
+  <script src="js/plane.js"></script>
+  <script src="js/snake.js"></script>
+  <script src="js/snakeUI.js"></script>
+</body>
+</html>
